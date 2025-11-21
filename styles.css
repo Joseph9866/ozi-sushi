@@ -1,0 +1,337 @@
+/* General Reset */
+
+@font-face {
+  font-family: "SquadOne";
+  src: url("/ozio-assets/fonts/Squada_One/SquadaOne-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("/ozio-assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("/ozio-assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf")
+    format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("/ozio-assets/fonts/Titillium_Web/TitilliumWeb-BoldItalic.ttf")
+    format("truetype");
+  font-weight: bolder;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("/ozio-assets/fonts/Titillium_Web/TitilliumWeb-ExtraLight.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("/ozio-assets/fonts/Titillium_Web/TitilliumWeb-ExtraLightItalic.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("/ozio-assets/fonts/Titillium_Web/TitilliumWeb-Italic.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("/ozio-assets/fonts/Titillium_Web/TitilliumWeb-Light.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("/ozio-assets/fonts/Titillium_Web/TitilliumWeb-LightItalic.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("/ozio-assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("/ozio-assets/fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("/ozio-assets/fonts/Titillium_Web/TitilliumWeb-SemiBoldItalic.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  font-family: "TitilliumWeb", "SquadOne";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+header .logo {
+  font-size: 50px;
+  font-family: "SquadOne";
+  text-transform: uppercase;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  size: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: left;
+  background: url("/ozio-assets/images/pexels-photo-359993.jpg") no-repeat
+    center center/cover;
+  color: white;
+  align-items: flex-start;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "TitilliumWeb";
+  font-weight: 100;
+  padding-bottom: 0;
+}
+
+.hero p {
+  font-size: 20px;
+  padding-top: 0;
+  margin: 10px 0;
+}
+
+.hero .cta {
+  background: #a31c1a;
+  color: white;
+  border: 2px white solid;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.featured {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background: #f8f8f8;
+}
+
+.featured-item {
+  width: 30%;
+  text-align: left;
+}
+
+.featured-item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.featured-item h2 {
+  margin: 15px 0;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.featured-item p {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #333;
+}
+
+.featured-item .more {
+  display: inline-block;
+  margin-top: 10px;
+  background: green;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.gallery {
+  text-align: center;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: black;
+  color: white;
+}
+.cta {
+  display: inline-block;
+  margin-top: 10px;
+  background: green;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three images per row */
+  gap: 10px; /* Space between images */
+  justify-items: center; /* Center-align the images within their grid cells */
+  margin-top: 20px;
+}
+.gallery-text {
+  text-align: right;
+  padding-right: 20px;
+  font-size: 15px;
+}
+.gallery-text h2 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.gallery-images img {
+  width: 330px;
+  height: 200px;
+}
+
+.advertisement {
+  display: grid;
+  height: 500px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: white; /* Ensure the background is white */
+  gap: 20px;
+}
+.advertisement-text {
+  text-align: right;
+  padding-left: 40%;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 15px; /* Adjust text size for readability */
+  line-height: 1.8; /* Add line spacing */
+  color: #333;
+}
+.brush-stroke img {
+  width: 400px;
+  height: 100px;
+}
+.advertisement-image {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.advertisement-image img {
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: black;
+  padding: 20px;
+}
+.info-text {
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(3, 1fr);
+}
+.one,
+.two,
+.social-links {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.one h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+  font-family: "SquadOne";
+}
+.footer-links {
+  text-transform: uppercase;
+}
+.footer-links li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+.footer-links li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 5px;
+}
+.social-links {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.social-links a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 20px;
+}
+.fa-brands {
+  padding-right: 10px;
+}
+.set {
+  padding-bottom: 10px;
+}
+svg {
+  color: white;
+  height: 20px;
+  width: 20px;
+}
+.map img {
+  height: 300px;
+  width: 700px;
+  padding-left: 10px;
+}
